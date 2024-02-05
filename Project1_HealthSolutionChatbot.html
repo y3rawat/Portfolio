@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Recipe Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
+
+
+<link rel='stylesheet' href='all in one/allmin.css'><link rel="stylesheet" href="./css/HealthSolutionChatbot.css">
+<style>
+  /* Add this CSS to your stylesheet or within a style tag in your HTML */
+  .resume-icon {
+    height: 120px;  /* Adjust the height to make it bigger */
+    width: 150px;   /* Adjust the width to make it bigger */
+    position: absolute; /* Use absolute positioning */
+    top: 505px;  /* Adjust the top position */
+    left: 1140px; /* Adjust the left position */
+  }
+</style>
+
+</head>
+<a href="#" id="reover-text" onclick="openModal()" title="Resume">
+  <img src="image/direction.png" alt="Resume Icon" class="resume-icon">
+</a>
+
+<!-- partial:index.partial.html -->
+
+<body>
+
+
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '64e2f09a1ec044000737df9a' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        } 
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+  
+  <div class="absolute top-0 left-0 w-full z-50 h-screen flex justify-center items-center p-4 md:p-6 lg:p-8">
+
+    <div class="max-w-lg bg-gradient-to-b from-white/60 to-white/30 text-[#1c0708] backdrop-blur-[.65em] border-[1px] border-solid border-white border-opacity-10 rounded-2xl shadow-black/50 overflow-hidden shadow-2xl hover:-translate-y-1 hover:shadow-black/75 hover:backdrop-blur-[1em] transition">
+      <ul class="wrapper">
+        <script>
+          function navigateToPage() {
+            window.location.href = "index.html";
+          }
+        </script>
+          
+        <li class="icon facebook" onclick="navigateToPage()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+            <span  class="tooltip">Home</span>
+            
+
+          
+        </li>
+        <li class="icon twitter">
+            <!-- <span class="tooltip">Twitter</span> -->
+            
+            
+        </li>
+        <script>
+          function navigateeToPage() {
+            window.location.href = "Projects_Page.html";
+          }
+        </script>
+        <li class="icon instagram" onclick="navigateeToPage()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="12" width="14" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32h96c88.4 0 160 71.6 160 160s-71.6 160-160 160H64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V320 96zM64 288h96c53 0 96-43 96-96s-43-96-96-96H64V288z"/></svg>
+            <span class="tooltip">Project</span>
+            
+        </li>
+      </ul>
+      <div class="grid place-items-center grid-cols-6 gap-2">
+        
+        <div class="col-span-3 p-8">
+          
+          <h2 class="font-bold text-2xl">
+
+           Medical GPT <br> 
+           
+           oR <br>
+           Health Solution Based <br> ChatBot  
+          </h2>
+          
+          <div class="tag-lines">
+            <span class="tag">Cause of problem</span> <span class="tag">Temprary Solution</span> <span class="tag">Feature Cause</span>
+          </div>
+          <p class="text-sm text-[#1c0708]/60">
+            Get Temprary Solution <br> Based on the small <br> informations from patient.
+          </p>
+          <div class="panel-heading active" id="headingOne" role="tab">
+            <h4 class="panel-title">
+              <a aria-controls="collapseOne" aria-expanded="true" class="mt-6 py-3 px-5 inline-flex bg-[#dcb600] hover:bg-[#8f7600] transition-colors text-gray-200 font-bold rounded-full text-sm collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" role="button">More Info</a>
+            </h4>
+          </div>
+        </div>
+        <div class="col-span-3 -mt-5 -mb-10">
+          <img alt="" class="recipe_img" src="image/Blonde curly hair man with ripped body cartoon sty.png">
+        </div>
+      </div>
+      <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseOne" role="tabpanel">
+        <div class="panel-body">
+          
+          <div class="panel-top">
+            <div class="level-item">
+              <div>
+                <div class="heading">
+                  
+                </div>
+                <div class="heading">
+                  points
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- <div class="ingredients">
+            <h3 class="ingredients">
+              Ingredients:
+            </h3>
+            <ul class="ingredients">
+              <li>
+                <label><input checked="checked" type="checkbox"> <span>12 ounces burrata</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>2 cups cherry tomatoes</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>1 Tbsp olive oil</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>1 Tbsp balsamic vinegar</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>2 tsp honey</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>1 clove garlic</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>½ tsp dried basil</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>1 tsp chopped fresh thyme</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>¼ tsp dried oregano</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>salt & pepper</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>chili flakes</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"><span>1 baguette</span></label>
+              </li>
+            </ul>
+          </div>-->
+          <div class="directions">
+            <h3 class="directions">
+              How to use it:
+            </h3>
+            <ol class="directions">
+              <li>
+                <label><input type="checkbox"> <span>If you are comfortable on giving small information then Enter Y <br> else N.</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"> <span>If Y then it will ask some details for better understanding, <br> Else you can give your email for persnal support</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"> <span>After some information it will ask you to enter your main problem.</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"> <span>Then if you have another symptoms then you can enter it <br>else you can simply say no.</span></label>
+              </li>
+              <li>
+                <label><input type="checkbox"> <span>Now it will give you your answer in 3 parts: <br> 1. What may the cause of the problem.  <br> 2. What are the Temprary Solutions. <br> 3. What may be the future problems. </span></label>
+              </li>          
+            </ol>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+<!-- partial -->
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.2/esm/ionicons.min.js'></script><script  src="js/HealthSolutionChatbot.js"></script>
+
+
+</body>
+</html>
