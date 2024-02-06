@@ -31,7 +31,13 @@
 <!-- partial:index.partial.html -->
 
 <body>
-
+  <script>
+    // Check if the screen width is less than or equal to 768px (typical mobile width)
+    if (window.innerWidth <= 768) {
+      // Redirect to the other page
+      window.location.href = "error.html";
+    }
+   </script>
 
   <script type="text/javascript">
     (function(d, t) {
