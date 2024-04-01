@@ -526,14 +526,14 @@ body.light-mode .video-bg:before {
 }
 
 .content-wrapper-context {
-  max-width: 350px;
+  max-width: 550px;
 }
 
 .content-button {
-  background-color: #3a6df0;
+  background-color: #ffd500;
   border: none;
   padding: 8px 26px;
-  color: #fff;
+  color: #000000;
   border-radius: 20px;
   margin-top: 16px;
   cursor: pointer;
@@ -542,7 +542,7 @@ body.light-mode .video-bg:before {
 }
 
 .content-wrapper-img {
-  width: 200px;
+  width: 270px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: -25px;
@@ -662,7 +662,8 @@ body.light-mode .video-bg:before {
 }
 
 .content-button:not(.open):hover {
-  background: #1e59f1;
+  background: #5c4e00;
+  color:white;
 }
 
 .menu {
@@ -674,11 +675,6 @@ body.light-mode .video-bg:before {
   margin: 0 12px;
 }
 
-@media screen and (max-width: 415px) {
-  .adobe-product .menu {
-    display: none;
-  }
-}
 .dropdown {
   position: relative;
   height: 53px;
